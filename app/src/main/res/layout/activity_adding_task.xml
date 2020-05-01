@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    >
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="enter task name" />
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/taskEditText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="enter task description" />
+    <EditText
+        android:id="@+id/statusEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/descriptionEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="enter task status " />
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/statusEditText"
+        android:layout_marginTop="20dp"
+        android:text="create task"
+        android:onClick="createNewTask"/>
+
+
+
+</RelativeLayout>
